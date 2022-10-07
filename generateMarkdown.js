@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// License Badge function
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
@@ -12,8 +11,7 @@ function renderLicenseBadge(license) {
       break;
   }
 }
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// License Link Function
 function renderLicenseLink(license) {
   switch (license) {
     case "MIT":
@@ -27,23 +25,12 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-let renderLicenseSection = (license) => license!=="none" ? "This uses a ${license}" : "N/A"
-   
-// switch (license) {
-//     case "MIT":
-//       return `MIT License`
-//     case "Apache":
-//       return `Apache License`
-//     case "Mozilla":
-//       return `Mozilla License`
-//     default:
-//       break;
-//   }
-// }
 
-// TODO: Create a function to generate markdown for README
+// License indicator function
+let renderLicenseSection = (license) => license!=="none" ? (`This uses a ${license}`) : "N/A"
+   
+
+// Function that generates a README
 function generateMarkdown(data) {
   
   return `
