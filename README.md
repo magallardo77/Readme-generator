@@ -19,7 +19,7 @@
   ## Installation 
   Run command "npm i inquirer"
 
-  ##Usage
+  ## Usage
   - This project can be used to easily create README's from scratch.
   - Students can take inspiration by viewing this code and use it as a reference for future projects
 
